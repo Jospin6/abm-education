@@ -84,7 +84,7 @@ export const PrioritiesSection = () => {
                 <div
                   className={`w-16 h-16 rounded-2xl bg-linear-to-br ${priority.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-lg`}
                 >
-                  <priority.icon className="w-8 h-8 text-white" />
+                  <priority.icon className="w-8 h-8 text-gray-900" />
                 </div>
 
                 {/* Number Badge */}

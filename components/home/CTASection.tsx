@@ -6,9 +6,9 @@ import Link from 'next/link';
 
 export const CTASection = () => {
   return (
-    <section className="py-24 bg-muted relative overflow-hidden">
+    <section className="py-24 bg-rose-200/30 relative overflow-hidden">
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-linear-to-br from-secondary/5 via-transparent to-accent/5" />
+      <div className="absolute  inset-0 bg-linear-to-br from-secondary/5 via-transparent to-accent/5" />
       
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -24,7 +24,7 @@ export const CTASection = () => {
             whileInView={{ scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, type: 'spring' }}
-            className="w-20 h-20 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-8"
+            className="w-20 h-20 rounded-full bg-rose-800/10 flex items-center justify-center mx-auto mb-8"
           >
             <Sparkles className="w-10 h-10 text-secondary" />
           </motion.div>

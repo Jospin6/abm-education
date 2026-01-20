@@ -64,7 +64,7 @@ export const PartnersSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
-          className="mt-12 bg-linear-to-r from-primary to-primary/90 rounded-2xl p-8 md:p-12 text-center relative overflow-hidden"
+          className="mt-12 bg-[#08233E] from-primary to-primary/90 rounded-2xl p-8 md:p-12 text-center relative overflow-hidden"
         >
           <div className="absolute inset-0 bg-grid-pattern opacity-10" />
           <div className="relative z-10">

@@ -80,7 +80,7 @@ export const ProgramsPreview = () => {
                     <div
                       className={`w-12 h-12 rounded-xl ${program.color} flex items-center justify-center group-hover:scale-110 transition-transform`}
                     >
-                      <program.icon className="w-6 h-6 text-white" />
+                      <program.icon className="w-6 h-6 text-gray-900" />
                     </div>
                     <span className="text-xs font-medium text-muted-foreground bg-muted px-2 py-1 rounded-full">
                       {program.badge}

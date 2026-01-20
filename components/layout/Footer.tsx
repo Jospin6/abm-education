@@ -1,6 +1,9 @@
 "use client";
 import Link  from 'next/link';
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
+import Image from 'next/image';
+
+
 
 const footerLinks = {
   programmes: [
@@ -35,7 +38,7 @@ const socialLinks = [
 
 export const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-[#08233E] text-gray-200">
       {/* Main Footer */}
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
@@ -43,7 +46,7 @@ export const Footer = () => {
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center">
-                <span className="text-secondary-foreground font-bold text-lg">ABM</span>
+                <Image src={"/images/logo.png"} className="rounded-xl" alt="ABM" width={48} height={48} />
               </div>
               <div>
                 <span className="font-bold text-lg">ABM-EDUCATION</span>

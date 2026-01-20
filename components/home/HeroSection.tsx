@@ -42,10 +42,10 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mt-8 mb-6 leading-tight"
+            className="text-4xl md:text-6xl font-bold text-white mt-8 mb-6 leading-tight"
           >
             Former l'
-            <span className="text-gradient-gold bg-linear-to-r from-secondary via-secondary to-accent bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-[hsl(42_91%_62%)] to-[hsl(42_91%_52%)] bg-clip-text text-transparent font-semibold">
               excellence africaine
             </span>
             .
@@ -68,7 +68,7 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="text-lg md:text-xl text-white/70 max-w-3xl mx-auto mb-10"
+            className="text-sm md:text-lg text-white/70 max-w-3xl mx-auto mb-10"
           >
             ABM-EDUCATION accompagne les jeunes africains vers l'excellence académique, 
             technologique et internationale. Ensemble, construisons les leaders de demain.
@@ -87,7 +87,7 @@ export const HeroSection = () => {
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
-            <Button
+            {/* <Button
               asChild
               size="lg"
               variant="outline"
@@ -102,53 +102,10 @@ export const HeroSection = () => {
               className="text-base px-8 h-14 text-white hover:bg-white/10 hover:text-white"
             >
               <Link href="/contact">Nous contacter</Link>
-            </Button>
-          </motion.div>
-
-          {/* Feature Pills */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1 }}
-            className="flex flex-wrap justify-center gap-4"
-          >
-            {[
-              { icon: GraduationCap, text: 'Excellence Académique' },
-              { icon: Lightbulb, text: 'Innovation Technologique' },
-              { icon: Globe, text: 'Rayonnement International' },
-            ].map((item, index) => (
-              <motion.div
-                key={item.text}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.4, delay: 1.2 + index * 0.1 }}
-                className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm"
-              >
-                <item.icon className="w-5 h-5 text-secondary" />
-                <span className="text-white/80 text-sm font-medium">{item.text}</span>
-              </motion.div>
-            ))}
+            </Button> */}
           </motion.div>
         </div>
       </div>
-
-      {/* Scroll Indicator */}
-      <motion.button
-        onClick={scrollToContent}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 hover:text-white transition-colors"
-      >
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-          className="flex flex-col items-center gap-2"
-        >
-          <span className="text-xs uppercase tracking-wider">Découvrir</span>
-          <ChevronDown className="w-6 h-6" />
-        </motion.div>
-      </motion.button>
     </section>
   );
 };

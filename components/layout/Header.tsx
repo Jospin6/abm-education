@@ -11,6 +11,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const navLinks = [
   { name: 'Accueil', path: '/' },
@@ -27,9 +28,6 @@ const navLinks = [
       { name: 'Bourse Denis Mukwege', path: '/programmes/bourse-mukwege' },
     ],
   },
-  { name: 'Comment ça marche', path: '/comment-ca-marche' },
-  { name: 'Partenariats', path: '/partenariats' },
-  { name: 'Impact', path: '/impact' },
   { name: 'Contact', path: '/contact' },
 ];
 
@@ -58,24 +56,20 @@ export const Header = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled
-            ? 'bg-background/95 backdrop-blur-md shadow-(--shadow-md)'
-            : 'bg-transparent'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 hero-gradient backdrop-blur-md shadow-(--shadow-md) transition-all duration-300 `}
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 group">
               <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center shadow-(--shadow-gold) group-hover:scale-105 transition-transform">
-                <span className="text-secondary-foreground font-bold text-lg">ABM</span>
+                <Image src={"/images/logo.png"} className="rounded-xl" alt="ABM" width={48} height={48} />
               </div>
               <div className="hidden sm:block">
-                <span className={`font-bold text-lg ${isScrolled ? 'text-primary' : 'text-white'}`}>
+                <span className={`font-bold text-lg text-white/90 hover:text-white`}>
                   ABM-EDUCATION
                 </span>
-                <p className={`text-xs ${isScrolled ? 'text-muted-foreground' : 'text-white/70'}`}>
+                <p className={`text-xs text-white/70`}>
                   Africa Bright Minds
                 </p>
               </div>
@@ -88,11 +82,7 @@ export const Header = () => {
                   <DropdownMenu key={link.name}>
                     <DropdownMenuTrigger asChild>
                       <button
-                        className={`px-4 py-2 rounded-lg flex items-center gap-1 transition-colors ${
-                          isScrolled
-                            ? 'text-foreground hover:bg-muted'
-                            : 'text-white/90 hover:text-white hover:bg-white/10'
-                        } ${isActive(link.path) ? 'font-semibold' : ''}`}
+                        className={`px-4 py-2 rounded-lg text-white/90 hover:text-white flex items-center gap-1 transition-colors ${isActive(link.path) ? 'font-semibold' : ''}`}
                       >
                         {link.name}
                         <ChevronDown className="w-4 h-4" />
@@ -115,11 +105,7 @@ export const Header = () => {
                   <Link
                     key={link.name}
                     href={link.path}
-                    className={`px-4 py-2 rounded-lg transition-colors ${
-                      isScrolled
-                        ? 'text-foreground hover:bg-muted'
-                        : 'text-white/90 hover:text-white hover:bg-white/10'
-                    } ${isActive(link.path) ? 'font-semibold' : ''}`}
+                    className={`px-4 py-2 text-white/90 hover:text-white rounded-lg transition-colors ${isActive(link.path) ? 'font-semibold' : ''}`}
                   >
                     {link.name}
                   </Link>
@@ -158,7 +144,7 @@ export const Header = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-40 lg:hidden pt-20"
+            className="fixed inset-0 bg-white z-40 lg:hidden pt-20"
           >
             <div className="absolute inset-0 bg-background/98 backdrop-blur-md" />
             <nav className="relative h-full overflow-y-auto px-4 py-6">
@@ -167,7 +153,7 @@ export const Header = () => {
                   <div key={link.name}>
                     <Link
                       href={link.path}
-                      className={`block px-4 py-3 rounded-lg text-lg transition-colors ${
+                      className={`block px-4 py-3 hover:bg-gray-400/50 rounded-lg text-lg transition-colors ${
                         isActive(link.path)
                           ? 'bg-secondary text-secondary-foreground font-semibold'
                           : 'text-foreground hover:bg-muted'
@@ -181,7 +167,7 @@ export const Header = () => {
                           <Link
                             key={item.path}
                             href={item.path}
-                            className={`block px-4 py-2 rounded-lg text-sm transition-colors ${
+                            className={`block px-4 py-2 hover:bg-gray-400/50 rounded-lg text-sm transition-colors ${
                               isActive(item.path)
                                 ? 'bg-muted font-semibold'
                                 : 'text-muted-foreground hover:text-foreground hover:bg-muted'

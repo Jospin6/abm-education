@@ -97,7 +97,7 @@ export const ImpactSection = () => {
             >
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 lg:p-8 hover:bg-white/10 transition-all">
                 <div className="w-14 h-14 rounded-xl bg-secondary/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                  <stat.icon className="w-7 h-7 text-secondary" />
+                  <stat.icon className="w-7 h-7 text-gray-200" />
                 </div>
                 <div className="text-4xl lg:text-5xl font-bold text-white mb-2">
                   <AnimatedCounter end={stat.value} suffix={stat.suffix} />
