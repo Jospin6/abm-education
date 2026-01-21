@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import { notFound, useParams } from 'next/navigation';
 import { Hero } from '@/components/hero';
 import Layout from '@/components/layout/Layout';
+import { capitalizeFirstLetter } from '@/lib/utils';
 
 type PageProps = {
   params: {
@@ -23,14 +24,14 @@ export default function ProgrammesPage() {
 
   return (
     <Layout>
-      <Hero title={programme.title} subtitle={programme.subtitle} />
+      <Hero title={capitalizeFirstLetter(programme.title)} subtitle={programme.subtitle} url={programme.url} urlTitle={programme.urlTitle} />
 
       <div className="container mx-auto px-4 py-16">
         <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
           <div className="space-y-6">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-                {programme.title}
+                {capitalizeFirstLetter(programme.title)}
               </h2>
               <p className="text-lg text-gray-600">{programme.shortDescription}</p>
             </div>
@@ -53,7 +54,7 @@ export default function ProgrammesPage() {
               />
             </div>
 
-            <div className="grid gap-4 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+            {/* <div className="grid gap-4 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
               {programme.duration && (
                 <div>
                   <div className="text-sm font-semibold text-gray-500">Duree</div>
@@ -72,7 +73,7 @@ export default function ProgrammesPage() {
                   <div className="text-gray-900">{programme.priceInfo}</div>
                 </div>
               )}
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -129,7 +130,7 @@ export default function ProgrammesPage() {
         </div>
 
         {programme.stats && (
-          <div className="mt-14 rounded-2xl bg-gradient-to-r from-blue-600 to-purple-700 p-8 text-white shadow-xl">
+          <div className="mt-14 rounded-2xl bg-linear-to-r from-blue-600 to-purple-700 p-8 text-white shadow-xl">
             <h3 className="text-3xl font-bold mb-8 text-center">
               Notre impact en chiffres
             </h3>

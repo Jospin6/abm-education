@@ -7,33 +7,26 @@ import Image from 'next/image';
 
 const footerLinks = {
   programmes: [
-    { name: 'ABM Tech Club', path: '/programmes/tech-club' },
-    { name: 'ABM Élite Internationale', path: '/programmes/elite-internationale' },
+    { name: 'ABM Tech Club', path: '/programmes/abm-tech-club' },
+    { name: 'ABM Élite Internationale', path: '/programmes/abm-elite-internationale' },
     { name: 'Un Élève, Un Ordinateur', path: '/programmes/un-eleve-un-ordinateur' },
     { name: 'ABM Education Award', path: '/programmes/education-award' },
     { name: 'Bourse Denis Mukwege', path: '/programmes/bourse-mukwege' },
   ],
   organisation: [
     { name: 'À propos', path: '/a-propos' },
-    { name: 'Notre équipe', path: '/equipe' },
-    { name: 'Impact', path: '/impact' },
-    { name: 'Ressources', path: '/ressources' },
     { name: 'Contact', path: '/contact' },
   ],
   engagement: [
-    { name: 'Devenir partenaire', path: '/partenariats' },
-    { name: 'Faire un don', path: '/partenariats' },
-    { name: 'Devenir mentor', path: '/partenariats' },
-    { name: 'Inscrire mon école', path: '/contact' },
+    { name: 'Devenir partenaire', path: '/contact' },
+    { name: 'Faire un don', path: '/don' },
   ],
 };
 
 const socialLinks = [
   { icon: Facebook, href: '#', label: 'Facebook' },
   { icon: Twitter, href: '#', label: 'Twitter' },
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
-  { icon: Instagram, href: '#', label: 'Instagram' },
-  { icon: Youtube, href: '#', label: 'YouTube' },
+  { icon: Linkedin, href: '#', label: 'LinkedIn' }
 ];
 
 export const Footer = () => {

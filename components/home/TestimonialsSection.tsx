@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 import { SectionHeading } from '@/components/ui/SectionHeading';
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -51,8 +52,8 @@ export const TestimonialsSection = () => {
   };
 
   return (
-    <section className="py-24 bg-muted">
-      <div className="container mx-auto px-4">
+    <section className=" bg-muted">
+      {/* <div className="container mx-auto px-4">
         <SectionHeading
           badge="Témoignages"
           title="Ils racontent leur histoire"
@@ -60,7 +61,6 @@ export const TestimonialsSection = () => {
         />
 
         <div className="max-w-4xl mx-auto mt-12">
-          {/* Testimonial Card */}
           <div className="relative">
             <AnimatePresence mode="wait">
               <motion.div
@@ -71,17 +71,14 @@ export const TestimonialsSection = () => {
                 transition={{ duration: 0.4 }}
                 className="bg-card rounded-2xl p-8 md:p-12 shadow-(--shadow-lg) border border-border/50"
               >
-                {/* Quote Icon */}
                 <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center mb-6">
                   <Quote className="w-6 h-6 text-secondary" />
                 </div>
 
-                {/* Quote */}
                 <blockquote className="text-xl md:text-2xl text-foreground font-medium leading-relaxed mb-8">
                   "{testimonials[currentIndex].quote}"
                 </blockquote>
 
-                {/* Author */}
                 <div className="flex items-center gap-4">
                   <div className="w-14 h-14 rounded-full bg-muted overflow-hidden">
                     <img
@@ -104,8 +101,6 @@ export const TestimonialsSection = () => {
                 </div>
               </motion.div>
             </AnimatePresence>
-
-            {/* Navigation */}
             <div className="flex items-center justify-center gap-4 mt-8">
               <button
                 onClick={prev}
@@ -113,8 +108,6 @@ export const TestimonialsSection = () => {
               >
                 <ChevronLeft className="w-5 h-5" />
               </button>
-
-              {/* Dots */}
               <div className="flex gap-2">
                 {testimonials.map((_, index) => (
                   <button
@@ -138,6 +131,15 @@ export const TestimonialsSection = () => {
             </div>
           </div>
         </div>
+      </div> */}
+      <div className="h-112.5 bg-neutral-800">
+        <Image
+          src="/images/main1.png"
+          alt="Apprendre avec ABM-EDUCATION"
+          width={1200}
+          height={450}
+          className="object-cover h-full w-full"
+        />
       </div>
     </section>
   );

@@ -30,7 +30,7 @@ const partnerTypes = [
 
 export const PartnersSection = () => {
   return (
-    <section className="py-24 bg-background">
+    <section className="py-16 bg-background block">
       <div className="container mx-auto px-4">
         <SectionHeading
           badge="Partenariats"

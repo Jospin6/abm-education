@@ -26,7 +26,7 @@ export function Navbar() {
 
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="/apropos">À propos</Link>
+            <Link href="/a-propos">À propos</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
 
@@ -42,17 +42,17 @@ export function Navbar() {
               bg-[#08233E] 
               shadow-2xl rounded-xl
               p-3
-              z-[999]
+              z-999
             "
           >
             <ul className="grid gap-2 w-[20rem]">
               <ListItem
-                href="/programmes/tech-club"
+                href="/programmes/abm-tech-club"
                 title="ABM Tech Club"
                 desc="Coding & robotique dans les écoles secondaires."
               />
               <ListItem
-                href="/programmes/elite-internationale"
+                href="/programmes/abm-elite-internationale"
                 title="ABM Élite Internationale"
                 desc="Admissions, dossier & intégration à l’international."
               />
@@ -77,13 +77,13 @@ export function Navbar() {
 
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="/docs">Apprendre</Link>
+            <Link href="/apprendre">Apprendre</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
 
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="/docs">Contact</Link>
+            <Link href="/contact">Contact</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>

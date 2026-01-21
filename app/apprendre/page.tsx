@@ -27,7 +27,7 @@ const tracks: Track[] = [
     icon: "💻",
     href: "/programmes/abm-tech-club",
     image:
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2200&q=80",
+      "/images/code.jpg",
   },
   {
     title: "ABM ÉLITE INTERNATIONALE",
@@ -35,7 +35,7 @@ const tracks: Track[] = [
     icon: "🌍",
     href: "/programmes/abm-elite-internationale",
     image:
-      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=2200&q=80",
+      "/images/class.jpg",
   },
   {
     title: "Un élève, un ordinateur",
@@ -43,23 +43,23 @@ const tracks: Track[] = [
     icon: "🧠",
     href: "/programmes/un-eleve-un-ordinateur",
     image:
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=2200&q=80",
+      "/images/ordi.jpg",
   },
   {
     title: "ABM Education Award",
     desc: "Célébrer l’excellence éducative et inspirer la performance scolaire et pédagogique.",
     icon: "🏆",
-    href: "/programmes/abm-education-award",
+    href: "/programmes/education-award",
     image:
-      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=2200&q=80",
+      "/images/ward.png",
   },
   {
     title: "Bourse Mukwege",
     desc: "Soutenir la persévérance et la résilience, et permettre l’accès à des études en Afrique ou à l’étranger.",
     icon: "🎓",
-    href: "/programmes/bourse-excellent-denis-mukwege",
+    href: "/programmes/bourse-mukwege",
     image:
-      "https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=2200&q=80",
+      "/images/bourse.png",
   },
 ];
 
@@ -69,9 +69,9 @@ const options: LearningOption[] = [
     subtitle:
       "Apprendre à résoudre des problèmes, écrire du code et créer des projets web/app.",
     tag: "Compétences tech",
-    href: "/programmes/abm-tech-club",
+    href: "#",
     image:
-      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=2200&q=80",
+      "/images/coding.jpg",
     bullets: [
       "Algorithmique, logique et bonnes pratiques",
       "Projets concrets (portfolio)",
@@ -84,9 +84,9 @@ const options: LearningOption[] = [
     subtitle:
       "Découvrir l’électronique, les capteurs et la construction de prototypes utiles.",
     tag: "STEM",
-    href: "/programmes/abm-tech-club",
+    href: "#",
     image:
-      "https://images.unsplash.com/photo-1581092334631-8e7d8d7f4e5c?auto=format&fit=crop&w=2200&q=80",
+      "/images/robotic.jpg",
     bullets: [
       "Prototypage et méthode d’innovation",
       "Capteurs, moteurs, logique embarquée",
@@ -94,66 +94,66 @@ const options: LearningOption[] = [
       "Démonstrations & démo day",
     ],
   },
-  {
-    title: "Orientation & Études Internationales",
-    subtitle:
-      "Un accompagnement structuré pour choisir, préparer et réussir son projet international.",
-    tag: "International",
-    href: "/programmes/abm-elite-internationale",
-    image:
-      "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=2200&q=80",
-    bullets: [
-      "Stratégie pays/écoles + calendrier",
-      "Dossier (CV, lettres, justificatifs)",
-      "Préparation aux entretiens (si requis)",
-      "Intégration et plan de réussite",
-    ],
-  },
-  {
-    title: "Accès au matériel (Laptop)",
-    subtitle:
-      "Apprendre sérieusement nécessite des outils : ABM facilite l’accès à des ordinateurs abordables.",
-    tag: "Équipement",
-    href: "/programmes/un-eleve-un-ordinateur",
-    image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=2200&q=80",
-    bullets: [
-      "Ordinateurs reconditionnés (selon disponibilité)",
-      "Paiement flexible et échelonné",
-      "Utilisation pendant la formation",
-      "Possession finale après paiement complet",
-    ],
-  },
-  {
-    title: "Excellence & Performance (Awards)",
-    subtitle:
-      "Motiver la qualité : récompenser les meilleurs enseignants, élèves et écoles.",
-    tag: "Reconnaissance",
-    href: "/programmes/abm-education-award",
-    image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=2200&q=80",
-    bullets: [
-      "Culture du mérite et de la discipline",
-      "Transparence des critères",
-      "Visibilité et opportunités",
-      "Communauté des lauréats",
-    ],
-  },
-  {
-    title: "Bourses & Parrainage",
-    subtitle:
-      "Soutien éducatif pour les apprenants persévérants : financement, mentoring et suivi.",
-    tag: "Opportunités",
-    href: "/programmes/bourse-excellent-denis-mukwege",
-    image:
-      "https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=2200&q=80",
-    bullets: [
-      "Bourses Afrique ou international",
-      "Mentorat et accompagnement",
-      "Suivi de progression",
-      "Approche humaine et confidentielle",
-    ],
-  },
+  // {
+  //   title: "Orientation & Études Internationales",
+  //   subtitle:
+  //     "Un accompagnement structuré pour choisir, préparer et réussir son projet international.",
+  //   tag: "International",
+  //   href: "/programmes/abm-elite-internationale",
+  //   image:
+  //     "https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=2200&q=80",
+  //   bullets: [
+  //     "Stratégie pays/écoles + calendrier",
+  //     "Dossier (CV, lettres, justificatifs)",
+  //     "Préparation aux entretiens (si requis)",
+  //     "Intégration et plan de réussite",
+  //   ],
+  // },
+  // {
+  //   title: "Accès au matériel (Laptop)",
+  //   subtitle:
+  //     "Apprendre sérieusement nécessite des outils : ABM facilite l’accès à des ordinateurs abordables.",
+  //   tag: "Équipement",
+  //   href: "/programmes/un-eleve-un-ordinateur",
+  //   image:
+  //     "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=2200&q=80",
+  //   bullets: [
+  //     "Ordinateurs reconditionnés (selon disponibilité)",
+  //     "Paiement flexible et échelonné",
+  //     "Utilisation pendant la formation",
+  //     "Possession finale après paiement complet",
+  //   ],
+  // },
+  // {
+  //   title: "Excellence & Performance (Awards)",
+  //   subtitle:
+  //     "Motiver la qualité : récompenser les meilleurs enseignants, élèves et écoles.",
+  //   tag: "Reconnaissance",
+  //   href: "/programmes/abm-education-award",
+  //   image:
+  //     "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=2200&q=80",
+  //   bullets: [
+  //     "Culture du mérite et de la discipline",
+  //     "Transparence des critères",
+  //     "Visibilité et opportunités",
+  //     "Communauté des lauréats",
+  //   ],
+  // },
+  // {
+  //   title: "Bourses & Parrainage",
+  //   subtitle:
+  //     "Soutien éducatif pour les apprenants persévérants : financement, mentoring et suivi.",
+  //   tag: "Opportunités",
+  //   href: "/programmes/bourse-excellent-denis-mukwege",
+  //   image:
+  //     "https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=2200&q=80",
+  //   bullets: [
+  //     "Bourses Afrique ou international",
+  //     "Mentorat et accompagnement",
+  //     "Suivi de progression",
+  //     "Approche humaine et confidentielle",
+  //   ],
+  // },
 ];
 
 const methods = [
@@ -209,7 +209,7 @@ export default function ApprendrePage() {
             >
               <div className="relative h-44">
                 <Image src={t.image} alt={t.title} fill className="object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/55 via-black/10 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white backdrop-blur">
                     <span>{t.icon}</span>
@@ -276,7 +276,7 @@ export default function ApprendrePage() {
             >
               <div className="relative h-52">
                 <Image src={o.image} alt={o.title} fill className="object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/10 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white backdrop-blur">
                     {o.tag}
@@ -309,7 +309,7 @@ export default function ApprendrePage() {
 
       {/* CTA */}
       <section className="mx-auto max-w-6xl px-4 pb-20">
-        <div className="rounded-3xl bg-neutral-900 p-10 text-white">
+        <div className="rounded-3xl bg-[#08233E] p-10 text-white">
           <h2 className="text-2xl font-semibold">
             Vous ne savez pas quoi choisir ?
           </h2>
@@ -326,21 +326,24 @@ export default function ApprendrePage() {
             >
               Nous contacter
             </a>
-            <a
+            {/* <a
               href="/programmes"
               className="rounded-xl border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-semibold text-white hover:bg-white/15"
             >
               Voir tous les programmes
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
-
-      <footer className="border-t border-neutral-200 py-10">
-        <div className="mx-auto max-w-6xl px-4 text-sm text-neutral-600">
-          © {new Date().getFullYear()} — ABM Education
-        </div>
-      </footer>
+      <div className="my-10 h-112.5 bg-neutral-800">
+            <Image
+              src="/images/main1.png"
+              alt="Apprendre avec ABM-EDUCATION"
+              width={1200}
+              height={450}
+              className="object-cover w-full"
+            />
+      </div>
     </Layout>
   );
 }

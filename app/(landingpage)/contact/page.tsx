@@ -74,7 +74,7 @@ export default function ContactPage() {
                                     </div>
                                 </div>
 
-                                <div className="flex gap-3">
+                                {/* <div className="flex gap-3">
                                     <span className="mt-0.5">📝</span>
                                     <div>
                                         <div className="font-semibold">Formulaire</div>
@@ -82,7 +82,7 @@ export default function ContactPage() {
                                             Disponible en ligne (ci-dessous).
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 

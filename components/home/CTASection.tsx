@@ -41,12 +41,12 @@ export const CTASection = () => {
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
-            <Button asChild size="lg" className="btn-gold gap-2 px-8 h-14 text-base">
+            {/* <Button asChild size="lg" className="btn-gold gap-2 px-8 h-14 text-base">
               <Link href="/programmes">
                 Découvrir nos programmes
                 <ArrowRight className="w-5 h-5" />
               </Link>
-            </Button>
+            </Button> */}
             <Button
               asChild
               size="lg"

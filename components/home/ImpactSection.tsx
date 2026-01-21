@@ -8,28 +8,28 @@ import Link from 'next/link';
 const stats = [
   {
     icon: Users,
-    value: 5000,
+    value: 5,
     suffix: '+',
     label: 'Élèves accompagnés',
     description: 'Jeunes formés et soutenus',
   },
   {
     icon: School,
-    value: 50,
+    value: 3,
     suffix: '+',
     label: 'Écoles partenaires',
     description: 'Institutions engagées',
   },
   {
     icon: GraduationCap,
-    value: 200,
+    value: 1,
     suffix: '+',
     label: 'Bourses attribuées',
     description: "Pour l'international",
   },
   {
     icon: Globe,
-    value: 15,
+    value: 3,
     suffix: '+',
     label: 'Pays de destination',
     description: 'Pour nos étudiants',
@@ -122,7 +122,7 @@ export const ImpactSection = () => {
             size="lg"
             className="bg-white text-primary hover:bg-white/90 gap-2"
           >
-            <Link href="/impact">
+            <Link href="/a-propos">
               Découvrir nos histoires
               <ArrowRight className="w-5 h-5" />
             </Link>

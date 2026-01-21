@@ -26,9 +26,8 @@ const navLinks = [
     name: "Programmes",
     path: "/programmes",
     dropdown: [
-      { name: "Tous les programmes", path: "/programmes" },
-      { name: "ABM Tech Club", path: "/programmes/tech-club" },
-      { name: "ABM Élite Internationale", path: "/programmes/elite-internationale" },
+      { name: "ABM Tech Club", path: "/programmes/abm-tech-club" },
+      { name: "ABM Élite Internationale", path: "/programmes/abm-elite-internationale" },
       { name: "Un Élève, Un Ordinateur", path: "/programmes/un-eleve-un-ordinateur" },
       { name: "ABM Education Award", path: "/programmes/education-award" },
       { name: "Bourse Denis Mukwege", path: "/programmes/bourse-mukwege" },
@@ -38,6 +37,7 @@ const navLinks = [
 ];
 
 export const Header = () => {
+  
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -88,7 +88,7 @@ export const Header = () => {
             {/* CTA Button */}
             <div className="hidden lg:flex items-center gap-4">
               <Button asChild className="btn-gold gap-2">
-                <Link href="/partenariats">
+                <Link href="/don">
                   <Heart className="w-4 h-4" />
                   Faire un don
                 </Link>

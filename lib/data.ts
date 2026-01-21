@@ -1,5 +1,7 @@
 export interface Programme {
   id: number;
+  url?: string;
+  urlTitle?: string;
   slug: string;
   title: string;
   subtitle: string;
@@ -24,6 +26,8 @@ export const programmesData: Programme[] = [
   {
     id: 1,
     slug: "abm-tech-club",
+    url: "/contact",
+    urlTitle: "Prendre contact",
     title: "ABM TECH CLUB",
     subtitle: "Programme de formation en programmation, coding et robotique",
     shortDescription: "Formation en programmation, coding et robotique dans les écoles secondaires pour préparer aux métiers du futur.",
@@ -32,7 +36,7 @@ export const programmesData: Programme[] = [
       "Notre approche pédagogique combine théorie et pratique avec un ratio de 30% de théorie et 70% de pratique. Chaque session est animée par des professionnels du secteur tech qui partagent leur expérience et orientent les élèves vers les carrières de demain.",
       "Nous croyons que chaque élève mérite d'acquérir des compétences numériques fondamentales pour réussir dans un monde de plus en plus digitalisé."
     ],
-    imageUrl: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=1200&h-800&fit=crop",
+    imageUrl: "/images/code.jpg",
     features: [
       "Initiation à la programmation Python et JavaScript",
       "Ateliers de robotique avec kits LEGO Mindstorms et Arduino",
@@ -76,6 +80,8 @@ export const programmesData: Programme[] = [
   {
     id: 2,
     slug: "abm-elite-internationale",
+    url: "/contact",
+    urlTitle: "Prendre contact",
     title: "ABM ÉLITE INTERNATIONALE",
     subtitle: "Accompagnement vers l'internationalisation",
     shortDescription: "Programme d'accompagnement pour l'internationalisation des élèves, enseignants et professionnels.",
@@ -84,7 +90,7 @@ export const programmesData: Programme[] = [
       "Nous collaborons avec un réseau de plus de 50 institutions partenaires à travers le monde, notamment au Canada, en France, en Belgique, aux États-Unis et dans plusieurs pays d'Afrique.",
       "Notre approche personnalisée tient compte des aspirations individuelles, du profil académique et des contraintes budgétaires de chaque candidat."
     ],
-    imageUrl: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1200&h=800&fit=crop",
+    imageUrl: "/images/class.jpg",
     features: [
       "Recherche et sélection d'institutions adaptées au profil",
       "Préparation complète des dossiers académiques",
@@ -127,6 +133,8 @@ export const programmesData: Programme[] = [
   {
     id: 3,
     slug: "un-eleve-un-ordinateur",
+    url: "/don",
+    urlTitle: "Faire un don",
     title: "UN ÉLÈVE, UN ORDINATEUR",
     subtitle: "Accès à la technologie pour tous",
     shortDescription: "Programme d'accès à des ordinateurs portables abordables pour élèves et enseignants.",
@@ -135,7 +143,7 @@ export const programmesData: Programme[] = [
       "Nos ordinateurs sont soigneusement sélectionnés, reconditionnés et testés pour offrir des performances optimales. Provenant principalement du Canada, ils répondent aux normes techniques les plus strictes.",
       "Nous proposons un système de paiement échelonné adapté aux situations économiques diverses, permettant aux bénéficiaires d'utiliser l'appareil pendant la formation et d'en devenir propriétaires après paiement complet."
     ],
-    imageUrl: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1200&h=800&fit=crop",
+    imageUrl: "/images/ordi.jpg",
     features: [
       "Ordinateurs portables reconditionnés importés du Canada",
       "Garantie de 12 mois sur tous les appareils",
@@ -179,6 +187,8 @@ export const programmesData: Programme[] = [
   {
     id: 4,
     slug: "education-award",
+    url: "/contact",
+    urlTitle: "Prendre contact",
     title: "ABM EDUCATION AWARD",
     subtitle: "Reconnaissance de l'excellence éducative",
     shortDescription: "Programme de reconnaissance et de valorisation de l'excellence éducative.",
@@ -187,7 +197,7 @@ export const programmesData: Programme[] = [
       "Notre jury, composé d'experts en éducation, d'universitaires et de personnalités du secteur privé, évalue les candidatures sur la base de critères rigoureux et transparents.",
       "La cérémonie de remise des prix est un événement majeur qui rassemble chaque année plus de 500 participants du monde éducatif, politique et économique."
     ],
-    imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&h=800&fit=crop",
+    imageUrl: "/images/ward.png",
     features: [
       "Cérémonie annuelle officielle de remise des prix",
       "Dotations financières importantes pour les lauréats",
@@ -231,6 +241,8 @@ export const programmesData: Programme[] = [
   {
     id: 5,
     slug: "bourse-mukwege",
+    url: "/contact",
+    urlTitle: "Prendre contact",
     title: "BOURSE EXCELLENT DENIS MUKWEGE",
     subtitle: "Persévérance et engagement malgré l'adversité",
     shortDescription: "Programme inspiré des valeurs du Dr Denis Mukwege, Prix Nobel de la Paix 2018.",
@@ -239,7 +251,7 @@ export const programmesData: Programme[] = [
       "Le Dr Mukwege, surnommé 'l'homme qui répare les femmes', a dédié sa vie à aider les survivantes de violences sexuelles en République Démocratique du Congo. Notre bourse perpétue son esprit en soutenant ceux qui, malgré les traumatismes et difficultés, poursuivent leurs rêves éducatifs.",
       "Les bénéficiaires peuvent utiliser cette bourse pour étudier en Afrique ou à l'étranger, dans l'institution de leur choix, selon leur projet académique et professionnel."
     ],
-    imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&h=800&fit=crop",
+    imageUrl: "/images/bourse.png",
     features: [
       "Bourse complète couvrant frais de scolarité et de subsistance",
       "Accompagnement psychologique si nécessaire",
