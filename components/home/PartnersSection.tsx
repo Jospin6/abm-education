@@ -77,7 +77,7 @@ export const PartnersSection = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button asChild size="lg" className="btn-gold gap-2">
-                <Link href="/partenariats">
+                <Link href="/contact">
                   Devenir partenaire
                   <ArrowRight className="w-5 h-5" />
                 </Link>
@@ -88,7 +88,7 @@ export const PartnersSection = () => {
                 variant="outline"
                 className="bg-white/10 border-white/20 text-white hover:bg-white/20"
               >
-                <Link href="/contact">Nous contacter</Link>
+                <Link href="/don">Faire un don</Link>
               </Button>
             </div>
           </div>

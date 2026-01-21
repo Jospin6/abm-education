@@ -17,21 +17,42 @@ export const HeroSection = () => {
         <div className="absolute inset-0 bg-grid-pattern opacity-30" />
         
         {/* Floating Orbs */}
-        <motion.div
-          animate={{ y: [-20, 20, -20], x: [-10, 10, -10] }}
-          transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-secondary/10 blur-3xl"
-        />
-        <motion.div
-          animate={{ y: [20, -20, 20], x: [10, -10, 10] }}
-          transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-accent/10 blur-3xl"
-        />
-        <motion.div
-          animate={{ y: [-15, 15, -15] }}
-          transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute top-1/2 right-1/3 w-48 h-48 rounded-full bg-secondary/5 blur-2xl"
-        />
+                <motion.div
+                    animate={{ y: [-20, 20, -20], x: [-10, 10, -10] }}
+                    transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+                    className="
+                        absolute top-1/4 left-1/4
+                        w-64 h-64 rounded-full
+                        bg-[hsl(42_91%_62%)]
+                        opacity-20
+                        blur-3xl
+                    "
+                />
+
+
+                <motion.div
+                animate={{ y: [20, -20, 20], x: [10, -10, 10] }}
+                transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+                className="
+                    absolute bottom-1/4 right-1/4
+                    w-96 h-96 rounded-full
+                    bg-[hsl(179_78%_42%)]
+                    opacity-15
+                    blur-3xl
+                "
+                />
+
+                <motion.div
+                animate={{ y: [-15, 15, -15] }}
+                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                className="
+                    absolute top-1/2 right-1/3
+                    w-48 h-48 rounded-full
+                    bg-[hsl(213_76%_20%)]
+                    opacity-25
+                    blur-2xl
+                "
+                />
       </div>
 
       {/* Content */}
