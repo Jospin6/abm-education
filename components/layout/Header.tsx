@@ -82,8 +82,7 @@ export const Header = () => {
             </Link>
 
             {/* Desktop Navigation */}
-            <Navbar/>
-
+            <Navbar />
 
             {/* CTA Button */}
             <div className="hidden lg:flex items-center gap-4">

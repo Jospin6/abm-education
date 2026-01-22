@@ -16,7 +16,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 export function Navbar() {
     const isMobile = useIsMobile()
   return (
-    <NavigationMenu viewport={isMobile} className="text-white">
+    <NavigationMenu viewport={isMobile} className="text-white hidden lg:flex">
       <NavigationMenuList className="flex-wrap">
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
